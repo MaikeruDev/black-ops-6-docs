@@ -1,11 +1,13 @@
 'use client'
 
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import { LanguageContext } from '@/app/language-context'
 import { Info } from 'lucide-react'
 
 export default function LibertyFallsEasterEgg() {
   const { language } = useContext(LanguageContext)
+
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div> 
@@ -78,6 +80,85 @@ export default function LibertyFallsEasterEgg() {
             : 'Die rote ist wahrscheinlich ein echter Hingucker! Hier könnten einige sehr wichtige Dinge sein, die Sie nicht verpassen sollten.'}
         </span>
       </p>
+
+      <div className="mt-6 text-black">
+        <button 
+          className="text-blue-600 underline" 
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? 'Hide Code Example' : 'Show Code Example'}
+        </button>
+        {isOpen && (
+          <pre className="p-4 mt-2 bg-gray-100 rounded-lg overflow-x-auto">
+            <code>
+              {language === 'EN'
+                ? `// English code example\nconsole.log("Hello World!");`
+                : `// Deutsches Code Beispiel\nconsole.log("Hallo Welt!");`}
+            </code>
+          </pre>
+        )}
+      </div>
+
+      <ol className="mt-6 list-decimal pl-8 space-y-2">
+        <li>{language === 'EN' ? 'Open the settings menu.' : 'Öffnen Sie das Einstellungsmenü.'}</li>
+        <li>{language === 'EN' ? 'Navigate to the "Display" section.' : 'Navigieren Sie zum Bereich "Anzeige".'}</li>
+        <li>{language === 'EN' ? 'Select your desired options and save.' : 'Wählen Sie Ihre gewünschten Optionen und speichern Sie.'}</li>
+      </ol>
+
+      <div className="relative group mt-4">
+        <span className="underline cursor-help text-blue-600">Hover me</span>
+        <div className="absolute left-0 mt-1 hidden group-hover:block bg-gray-800 text-white text-sm rounded-md p-2 w-48">
+          {language === 'EN'
+            ? 'A device that projects images or video onto a screen.'
+            : 'Ein Gerät, das Bilder oder Videos auf eine Leinwand projiziert.'}
+        </div>
+      </div>
+
+      <div className="mt-10">
+        <h2 className="text-2xl font-semibold mb-4">
+          {language === 'EN' ? 'Frequently Asked Questions' : 'Häufig gestellte Fragen'}
+        </h2>
+        <details className="mb-4">
+          <summary className="cursor-pointer text-blue-600 underline">
+            {language === 'EN' ? 'What does this feature do?' : 'Was macht diese Funktion?'}
+          </summary>
+          <p className="mt-2">
+            {language === 'EN'
+              ? 'This feature allows you to adjust projector colors based on the counter status.'
+              : 'Diese Funktion ermöglicht es Ihnen, die Farben des Projektors basierend auf dem Status des Zählers anzupassen.'}
+          </p>
+        </details>
+        <details className="mb-4">
+          <summary className="cursor-pointer text-blue-600 underline">
+            {language === 'EN' ? 'Can I reset the colors?' : 'Kann ich die Farben zurücksetzen?'}
+          </summary>
+          <p className="mt-2">
+            {language === 'EN'
+              ? 'Yes, simply navigate to the settings and choose "Reset Colors."'
+              : 'Ja, navigieren Sie einfach zu den Einstellungen und wählen Sie "Farben zurücksetzen".'}
+          </p>
+        </details>
+      </div>
+
+      <div className="mt-10 border-t pt-4">
+  <h2 className="text-2xl font-semibold mb-4">
+    {language === 'EN' ? 'Changelog' : 'Änderungsprotokoll'}
+  </h2>
+  <ul className="list-disc pl-5 space-y-2">
+    <li>
+      {language === 'EN'
+        ? 'Version 1.1 - Added new color options for the info boxes.'
+        : 'Version 1.1 - Neue Farboptionen für die Infoboxen hinzugefügt.'}
+    </li>
+    <li>
+      {language === 'EN'
+        ? 'Version 1.0 - Initial release with language support and basic styling.'
+        : 'Version 1.0 - Erstausgabe mit Sprachunterstützung und Basisstyling.'}
+    </li>
+  </ul>
+</div>
+
+
 
     </div>
   )
