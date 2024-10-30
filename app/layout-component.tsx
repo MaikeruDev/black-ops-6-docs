@@ -91,95 +91,99 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </div>
       </header>
       <div className="container flex-1 items-start md:grid md:grid-cols-[220px_minmax(0,1fr)] md:gap-6 lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-10">
-        <aside className={`${mobileMenuOpen ? 'block' : 'hidden'} md:block fixed md:sticky top-14 z-30 -ml-2 h-[calc(100vh-3.5rem)] w-full shrink-0 overflow-y-auto bg-black md:bg-transparent`}>
-          <ScrollArea className="h-full py-6 pl-8 pr-6 lg:py-8"> 
+      <aside className={`${mobileMenuOpen ? 'block' : 'hidden'} md:block fixed md:sticky top-14 z-30 -ml-2 h-[calc(100vh-3.5rem)] w-full shrink-0 overflow-y-auto bg-black md:bg-transparent`}>
+        <ScrollArea className="h-full py-6 pl-8 pr-6 lg:py-8"> 
           <div className="mb-2 mt-6"> 
-          <Link href="/zombies" className="mb-2 text-lg font-semibold hover:underline">
+            <Link
+              href="/zombies"
+              className="mb-2 text-lg font-semibold hover:underline"
+              onClick={() => setMobileMenuOpen(false)}
+            >
               {language === 'EN' ? 'Zombies' : 'Zombies'}
             </Link>
           </div>
-            <nav className="grid items-start gap-2">
-              <div>
-                <button 
-                  onClick={handleEasterEggsClick}
-                  className="flex items-center justify-between w-full text-sm hover:underline focus:outline-none"
-                >
-                  <span>{language === 'EN' ? 'Liberty Falls Easter Eggs' : 'Liberty Falls Easter Eggs'}</span>
-                  {easterEggsOpen ? <ChevronDown className="h-4 w-4" /> : <ChevronRight className="h-4 w-4" />}
-                </button>
-                {easterEggsOpen && (
-                  <div className="ml-4 mt-2 grid gap-2">
-                    <Link className="text-sm hover:underline" href="/zombies/liberty-falls/easter-eggs/main">
-                      {language === 'EN' ? 'Main Easter Egg' : 'Haupt-Easter Egg'}
-                    </Link>
-                    <Link className="text-sm hover:underline" href="/zombies/liberty-falls/easter-eggs/domination">
-                      {language === 'EN' ? 'Domination' : 'Dominanz'}
-                    </Link>
-                    <Link className="text-sm hover:underline" href="/zombies/liberty-falls/easter-eggs/bowling">
-                      {language === 'EN' ? 'Bowling' : 'Bowling'}
-                    </Link>
-                    <Link className="text-sm hover:underline" href="/zombies/liberty-falls/easter-eggs/vault">
-                      {language === 'EN' ? 'Bank Vault' : 'Bank Tresor'}
-                    </Link>
-                    <Link className="text-sm hover:underline" href="/zombies/liberty-falls/easter-eggs/raining">
-                      {language === 'EN' ? 'Raining Zombies' : 'Zombieregen'}
-                    </Link>
-                    <Link className="text-sm hover:underline" href="/zombies/liberty-falls/easter-eggs/rave">
-                      {language === 'EN' ? 'Zombie Rave' : 'Zombie Rave'}
-                    </Link>
-                    <Link className="text-sm hover:underline" href="/zombies/liberty-falls/easter-eggs/dsb-music">
-                      {language === 'EN' ? 'Destroy Something Beautiful' : 'Destroy Something Beautiful'}
-                    </Link>
-                    <Link className="text-sm hover:underline" href="/zombies/liberty-falls/easter-eggs/pool">
-                      {language === 'EN' ? 'Pool tables' : 'Billiardtische'}
-                    </Link>
-                    <Link className="text-sm hover:underline" href="/zombies/liberty-falls/easter-eggs/free-powerups">
-                      {language === 'EN' ? 'Free Power-Ups' : 'Gratis Powerups'}
-                    </Link>
-                  </div>
-                )}
-              </div>
-              <Link className="text-sm hover:underline" href="/zombies/weapons">
-                {language === 'EN' ? 'Weapons' : 'Waffen'}
-              </Link>
-              <Link className="text-sm hover:underline" href="/zombies/maps">
-                {language === 'EN' ? 'Maps' : 'Karten'}
-              </Link>
-              <Link className="text-sm hover:underline" href="/zombies/perks">
-                {language === 'EN' ? 'Perks' : 'Perks'}
-              </Link>
-            </nav> 
-            <div className="mb-2 mt-6"> 
-                <Link href="/multiplayer" className="mb-2 mt-6 text-lg font-semibold hover:underline">
-                {language === 'EN' ? 'Multiplayer' : 'Mehrspieler'}
-                </Link>
+          <nav className="grid items-start gap-2">
+            <div>
+              <button 
+                onClick={handleEasterEggsClick}
+                className="flex items-center justify-between w-full text-sm hover:underline focus:outline-none"
+              >
+                <span>{language === 'EN' ? 'Liberty Falls Easter Eggs' : 'Liberty Falls Easter Eggs'}</span>
+                {easterEggsOpen ? <ChevronDown className="h-4 w-4" /> : <ChevronRight className="h-4 w-4" />}
+              </button>
+              {easterEggsOpen && (
+                <div className="ml-4 mt-2 grid gap-2">
+                  <Link href="/zombies/liberty-falls/easter-eggs/main" className="text-sm hover:underline" onClick={() => setMobileMenuOpen(false)}>
+                    {language === 'EN' ? 'Main Easter Egg' : 'Haupt-Easter Egg'}
+                  </Link>
+                  <Link href="/zombies/liberty-falls/easter-eggs/domination" className="text-sm hover:underline" onClick={() => setMobileMenuOpen(false)}>
+                    {language === 'EN' ? 'Domination' : 'Dominanz'}
+                  </Link>
+                  <Link href="/zombies/liberty-falls/easter-eggs/bowling" className="text-sm hover:underline" onClick={() => setMobileMenuOpen(false)}>
+                    {language === 'EN' ? 'Bowling' : 'Bowling'}
+                  </Link>
+                  <Link href="/zombies/liberty-falls/easter-eggs/vault" className="text-sm hover:underline" onClick={() => setMobileMenuOpen(false)}>
+                    {language === 'EN' ? 'Bank Vault' : 'Bank Tresor'}
+                  </Link>
+                  <Link href="/zombies/liberty-falls/easter-eggs/raining" className="text-sm hover:underline" onClick={() => setMobileMenuOpen(false)}>
+                    {language === 'EN' ? 'Raining Zombies' : 'Zombieregen'}
+                  </Link>
+                  <Link href="/zombies/liberty-falls/easter-eggs/rave" className="text-sm hover:underline" onClick={() => setMobileMenuOpen(false)}>
+                    {language === 'EN' ? 'Zombie Rave' : 'Zombie Rave'}
+                  </Link>
+                  <Link href="/zombies/liberty-falls/easter-eggs/dsb-music" className="text-sm hover:underline" onClick={() => setMobileMenuOpen(false)}>
+                    {language === 'EN' ? 'Destroy Something Beautiful' : 'Destroy Something Beautiful'}
+                  </Link>
+                  <Link href="/zombies/liberty-falls/easter-eggs/pool" className="text-sm hover:underline" onClick={() => setMobileMenuOpen(false)}>
+                    {language === 'EN' ? 'Pool tables' : 'Billiardtische'}
+                  </Link>
+                  <Link href="/zombies/liberty-falls/easter-eggs/free-powerups" className="text-sm hover:underline" onClick={() => setMobileMenuOpen(false)}>
+                    {language === 'EN' ? 'Free Power-Ups' : 'Gratis Powerups'}
+                  </Link>
+                </div>
+              )}
             </div>
-            <nav className="grid items-start gap-2">
-              <Link className="text-sm hover:underline" href="/multiplayer/modes">
-                {language === 'EN' ? 'Game Modes' : 'Spielmodi'}
-              </Link>
-              <Link className="text-sm hover:underline" href="/multiplayer/maps">
-                {language === 'EN' ? 'Maps' : 'Karten'}
-              </Link>
-              <Link className="text-sm hover:underline" href="/multiplayer/weapons">
-                {language === 'EN' ? 'Weapons' : 'Waffen'}
-              </Link>
-            </nav>
-            <div className="mb-2 mt-6"> 
-                <Link href="/campaign" className="text-lg font-semibold hover:underline">
-                {language === 'EN' ? 'Campaign' : 'Kampagne'}
-                </Link>
-            </div>
-            <nav className="grid items-start gap-2">
-              <Link className="text-sm hover:underline" href="/campaign/missions">
-                {language === 'EN' ? 'Missions' : 'Missionen'}
-              </Link>
-              <Link className="text-sm hover:underline" href="/campaign/characters">
-                {language === 'EN' ? 'Characters' : 'Charaktere'}
-              </Link>
-            </nav>
-          </ScrollArea>
-        </aside>
+            <Link href="/zombies/weapons" className="text-sm hover:underline" onClick={() => setMobileMenuOpen(false)}>
+              {language === 'EN' ? 'Weapons' : 'Waffen'}
+            </Link>
+            <Link href="/zombies/maps" className="text-sm hover:underline" onClick={() => setMobileMenuOpen(false)}>
+              {language === 'EN' ? 'Maps' : 'Karten'}
+            </Link>
+            <Link href="/zombies/perks" className="text-sm hover:underline" onClick={() => setMobileMenuOpen(false)}>
+              {language === 'EN' ? 'Perks' : 'Perks'}
+            </Link>
+          </nav> 
+          <div className="mb-2 mt-6"> 
+            <Link href="/multiplayer" className="mb-2 mt-6 text-lg font-semibold hover:underline" onClick={() => setMobileMenuOpen(false)}>
+              {language === 'EN' ? 'Multiplayer' : 'Mehrspieler'}
+            </Link>
+          </div>
+          <nav className="grid items-start gap-2">
+            <Link href="/multiplayer/modes" className="text-sm hover:underline" onClick={() => setMobileMenuOpen(false)}>
+              {language === 'EN' ? 'Game Modes' : 'Spielmodi'}
+            </Link>
+            <Link href="/multiplayer/maps" className="text-sm hover:underline" onClick={() => setMobileMenuOpen(false)}>
+              {language === 'EN' ? 'Maps' : 'Karten'}
+            </Link>
+            <Link href="/multiplayer/weapons" className="text-sm hover:underline" onClick={() => setMobileMenuOpen(false)}>
+              {language === 'EN' ? 'Weapons' : 'Waffen'}
+            </Link>
+          </nav>
+          <div className="mb-2 mt-6"> 
+            <Link href="/campaign" className="text-lg font-semibold hover:underline" onClick={() => setMobileMenuOpen(false)}>
+              {language === 'EN' ? 'Campaign' : 'Kampagne'}
+            </Link>
+          </div>
+          <nav className="grid items-start gap-2">
+            <Link href="/campaign/missions" className="text-sm hover:underline" onClick={() => setMobileMenuOpen(false)}>
+              {language === 'EN' ? 'Missions' : 'Missionen'}
+            </Link>
+            <Link href="/campaign/characters" className="text-sm hover:underline" onClick={() => setMobileMenuOpen(false)}>
+              {language === 'EN' ? 'Characters' : 'Charaktere'}
+            </Link>
+          </nav>
+        </ScrollArea>
+      </aside> 
         <main className="relative py-6 lg:gap-10 lg:py-8 xl:grid xl:grid-cols-[1fr_300px]">
           <div className="mx-auto w-full min-w-0">
             {children}
