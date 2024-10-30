@@ -153,7 +153,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               {language === 'EN' ? 'Perks' : 'Perks'}
             </Link>
           </nav> 
-          <div className="mb-2 mt-6"> 
+          {/* <div className="mb-2 mt-6"> 
             <Link href="/multiplayer" className="mb-2 mt-6 text-lg font-semibold hover:underline" onClick={() => setMobileMenuOpen(false)}>
               {language === 'EN' ? 'Multiplayer' : 'Mehrspieler'}
             </Link>
@@ -181,7 +181,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <Link href="/campaign/characters" className="text-sm hover:underline" onClick={() => setMobileMenuOpen(false)}>
               {language === 'EN' ? 'Characters' : 'Charaktere'}
             </Link>
-          </nav>
+          </nav> */}
         </ScrollArea>
       </aside> 
         <main className="relative py-6 lg:gap-10 lg:py-8 xl:grid xl:grid-cols-[1fr_300px]">

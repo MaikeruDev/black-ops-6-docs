@@ -12,9 +12,15 @@ export default function PerksAndPowerups() {
         {language === 'EN' ? 'Perks & Power-ups' : 'Vorteile & Power-Ups'}
       </h1>
       <p className="leading-7 [&:not(:first-child)]:mt-6">
-        {language === 'EN' 
-          ? 'Get familiar with all the perks and power-ups you’ll encounter in Black Ops 6 Zombies mode. Each one can give you the edge to survive longer and take on tougher waves of undead.' 
-          : 'Machen Sie sich mit allen Vorteilen und Power-Ups vertraut, die Sie im Black Ops 6 Zombies-Modus antreffen. Jeder kann Ihnen helfen, länger zu überleben und sich gegen stärkere Gegnerwellen zu behaupten.'}
+        {language === 'EN' ? (
+          <>
+            Get familiar with all the perks and power-ups you’ll encounter in <span className="text-blue-500 font-bold">Black Ops 6 Zombies</span> mode. Each one can give you the edge to survive longer and take on tougher waves of undead.
+          </>
+        ) : (
+          <>
+            Machen Sie sich mit allen Vorteilen und Power-Ups vertraut, die Sie im <span className="text-blue-500 font-bold">Black Ops 6 Zombies-Modus</span> antreffen. Jeder kann Ihnen helfen, länger zu überleben und sich gegen stärkere Gegnerwellen zu behaupten.
+          </>
+        )}
       </p>
 
       {/* Jugger-Nog */}
@@ -22,9 +28,15 @@ export default function PerksAndPowerups() {
         {language === 'EN' ? 'Jugger-Nog' : 'Jugger-Nog'}
       </h2>
       <p className="leading-7 [&:not(:first-child)]:mt-6">
-        {language === 'EN'
-          ? 'Boosts your health, letting you take extra hits. Perfect for when the hordes start closing in.'
-          : 'Erhöht Ihre Gesundheit, sodass Sie mehr Treffer einstecken können. Perfekt, wenn die Horden näher kommen.'}
+        {language === 'EN' ? (
+          <>
+            Boosts your <span className="text-blue-500 font-bold">health</span>, letting you take extra hits. Perfect for when the hordes start closing in.
+          </>
+        ) : (
+          <>
+            Erhöht Ihre <span className="text-blue-500 font-bold">Gesundheit</span>, sodass Sie mehr Treffer einstecken können. Perfekt, wenn die Horden näher kommen.
+          </>
+        )}
       </p>
 
       {/* Quick Revive */}
@@ -32,9 +44,15 @@ export default function PerksAndPowerups() {
         {language === 'EN' ? 'Quick Revive' : 'Schnelle Wiederbelebung'}
       </h2>
       <p className="leading-7 [&:not(:first-child)]:mt-6">
-        {language === 'EN'
-          ? 'Faster revives for teammates or a self-revive in solo mode. Clutch for staying in the game when things get intense.'
-          : 'Schnellere Wiederbelebung für Teamkollegen oder eine Selbstwiederbelebung im Solo-Modus. Unverzichtbar, wenn es brenzlig wird.'}
+        {language === 'EN' ? (
+          <>
+            Faster revives for teammates or a self-revive in <span className="text-blue-500 font-bold">solo mode</span>. Clutch for staying in the game when things get intense.
+          </>
+        ) : (
+          <>
+            Schnellere Wiederbelebung für Teamkollegen oder eine Selbstwiederbelebung im <span className="text-blue-500 font-bold">Solo-Modus</span>. Unverzichtbar, wenn es brenzlig wird.
+          </>
+        )}
       </p>
 
       {/* Speed Cola */}
@@ -42,10 +60,17 @@ export default function PerksAndPowerups() {
         {language === 'EN' ? 'Speed Cola' : 'Speed Cola'}
       </h2>
       <p className="leading-7 [&:not(:first-child)]:mt-6">
-        {language === 'EN'
-          ? 'Reload faster, which is crucial when the zombies won’t stop coming. Saves valuable time in the middle of heavy firefights.'
-          : 'Lädt schneller nach, was entscheidend ist, wenn die Zombies nicht aufhören zu kommen. Spart wertvolle Zeit inmitten heftiger Kämpfe.'}
+        {language === 'EN' ? (
+          <>
+            <span className="text-blue-500 font-bold">Reload</span> faster, which is crucial when the zombies won’t stop coming. Saves valuable time in the middle of heavy firefights.
+          </>
+        ) : (
+          <>
+            Lädt schneller nach, was entscheidend ist, wenn die Zombies nicht aufhören zu kommen. Spart wertvolle Zeit inmitten heftiger Kämpfe.
+          </>
+        )}
       </p>
+
 
       {/* Add additional perks and power-ups in a similar format */}
 
