@@ -8,7 +8,7 @@ export default function Maps() {
 
   return (
     <div>
-      <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl mb-4">
+      <h1 id="maps" className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl mb-4">
         {language === 'EN' ? 'Maps' : 'Karten'}
       </h1>
       <p className="leading-7 [&:not(:first-child)]:mt-6">
@@ -17,7 +17,8 @@ export default function Maps() {
           : 'Entdecke alle einzigartigen Karten im Zombies-Modus von Black Ops 6, jede mit eigenen Herausforderungen, Easter Eggs und Handlungselementen. Tauche in die verschiedenen Umgebungen ein und entdecke ihre Geheimnisse!'}
       </p>
 
-      <h2 className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+      {/* Terminus */}
+      <h2 id="terminus" className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
         {language === 'EN' ? 'Terminus' : 'Terminus'}
       </h2>
       <p className="leading-7 [&:not(:first-child)]:mt-6">
@@ -26,7 +27,8 @@ export default function Maps() {
           : 'Auf einer abgelegenen Insel im Philippinischen Meer gelegen, ist Terminus eine düstere, gefängnisähnliche Bioresearch-Station. Spieler müssen mutierten Kreaturen ausweichen und einzigartige Fallen wie Tentakel- und Kanonenfallen nutzen, um zu überleben. Die Karte bietet eine Mischung aus offenen Flächen und engen Zellen, die strategische Bewegungen erfordern.'}
       </p>
 
-      <h2 className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+      {/* Liberty Falls */}
+      <h2 id="liberty-falls" className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
         {language === 'EN' ? 'Liberty Falls' : 'Liberty Falls'}
       </h2>
       <p className="leading-7 [&:not(:first-child)]:mt-6">

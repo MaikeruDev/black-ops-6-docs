@@ -12,7 +12,7 @@ export default function LibertyFallsEasterEgg() {
 
       {/* Introduction */}
 
-      <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl mb-4">
+      <h1 id="header" className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl mb-4">
         {language === 'EN' ? 'Liberty Falls Main Easter Egg Guide' : 'Liberty Falls Haupt-Easter-Egg-Anleitung'}
       </h1>
       <p className="leading-7 [&:not(:first-child)]:mt-6">
@@ -23,7 +23,7 @@ export default function LibertyFallsEasterEgg() {
 
       {/* Step 1 */}
 
-      <h2 className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+      <h2 id="unlock-chirch" className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
         {language === 'EN' ? 'Step 1: Open the Church and Activate the Machine' : 'Schritt 1: Kirche öffnen und Maschine aktivieren'}
       </h2>
       <p className="leading-7 [&:not(:first-child)]:mt-6">
@@ -72,7 +72,7 @@ export default function LibertyFallsEasterEgg() {
 
        {/* Step 2 */}
 
-       <h2 className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+       <h2 id='craft-jet-gun' className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
           {language === 'EN' ? 'Step 2: Craft the Jet Gun' : 'Schritt 2: Jetgun herstellen'}
         </h2>
         <p className="leading-7 [&:not(:first-child)]:mt-6">
@@ -123,7 +123,7 @@ export default function LibertyFallsEasterEgg() {
 
         {/* Step 3 */}
 
-        <h2 className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+        <h2 id='collect-ltg' className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
           {language === 'EN' ? 'Step 3: Collect LTG Device Parts' : 'Schritt 3: LTG-Geräteteile sammeln'}
         </h2>
         <p className="leading-7 [&:not(:first-child)]:mt-6">
@@ -164,7 +164,7 @@ export default function LibertyFallsEasterEgg() {
 
         {/* Step 4 */}
  
-        <h2 className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+        <h2 id='assemble-ltg' className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
           {language === 'EN' ? 'Step 4: Assemble the LTG Device on the Bank Rooftop' : 'Schritt 4: LTG-Gerät auf dem Bankdach zusammensetzen'}
         </h2>
         <p className="leading-7 [&:not(:first-child)]:mt-6">
@@ -205,7 +205,7 @@ export default function LibertyFallsEasterEgg() {
 
         {/* Step 5 */}
 
-        <h2 className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+        <h2 id='fill-canister' className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
           {language === 'EN' ? 'Step 5: Fill the First Aether Canister' : 'Schritt 5: Ersten Äther-Kanister füllen'}
         </h2>
         <p className="leading-7 [&:not(:first-child)]:mt-6">
@@ -266,7 +266,7 @@ export default function LibertyFallsEasterEgg() {
 
         {/* Step 6 */}
 
-        <h2 className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+        <h2 id='sync-devices' className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
           {language === 'EN' ? 'Step 6: Sync Devices with the Strauss Counter' : 'Schritt 6: Geräte mit dem Strauss-Zähler synchronisieren'}
         </h2>
         <p className="leading-7 [&:not(:first-child)]:mt-6">
@@ -323,6 +323,99 @@ export default function LibertyFallsEasterEgg() {
             : 'Wenn die Projektoren nicht korrekt synchronisiert werden, versuche, alle Projektoren auf grün zu stellen und die Farbsequenz erneut zu versuchen. Wenn die Synchronisation erfolgreich ist, wird ein violetter Strahl ausgesendet, der das nächste Ziel markiert.'}
         </p>
         <img src="https://placehold.co/600x400/EEE/31343C" alt="Projector Sync Troubleshooting Placeholder" className="my-6" />
+    
+        {/* Step 7 */}
+
+        <h2 id='prepare-fight' className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+          {language === 'EN' ? 'Step 7: Prepare for the Final Boss Fight' : 'Schritt 7: Vorbereitung auf den Endbosskampf'}
+        </h2>
+        <p className="leading-7 [&:not(:first-child)]:mt-6">
+          {language === 'EN'
+            ? 'With all devices synced and objectives completed, it’s time to prepare for the final showdown. The boss fight will take place inside the church and features waves of powerful enemies.'
+            : 'Nachdem alle Geräte synchronisiert und die Ziele erreicht sind, ist es Zeit für den finalen Showdown. Der Bosskampf findet in der Kirche statt und beinhaltet Wellen mächtiger Gegner.'}
+        </p>
+
+        <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
+          {language === 'EN' ? '1. Gear Up with Essential Perks and Weapons' : '1. Mit wichtigen Perks und Waffen ausrüsten'}
+        </h3>
+        <p className="leading-7 [&:not(:first-child)]:mt-6">
+          {language === 'EN'
+            ? 'Make sure you have essential perks like Juggernog and Quick Revive, as they increase your survivability. Tier 2 Pack-a-Punched weapons are recommended, especially high-damage options like shotguns or LMGs.'
+            : 'Stelle sicher, dass du wichtige Perks wie Juggernog und Schnellwiederbelebung hast, da sie deine Überlebenschancen erhöhen. Waffen der Stufe 2 von Pack-a-Punch sind empfehlenswert, insbesondere solche mit hohem Schaden wie Schrotflinten oder LMGs.'}
+        </p>
+        <img src="https://placehold.co/600x400/EEE/31343C" alt="Essential Perks and Weapons Placeholder" className="my-6" />
+
+        <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
+          {language === 'EN' ? '2. Equip Helpful Gadgets' : '2. Nützliche Gadgets ausrüsten'}
+        </h3>
+        <p className="leading-7 [&:not(:first-child)]:mt-6">
+          {language === 'EN'
+            ? 'Bring Decoy Grenades or Monkey Bombs to distract zombies, giving you breathing room. Consider Napalm ammo mods for added fire damage, as this will help take down boss enemies quickly.'
+            : 'Bringe Täuschgranaten oder Affenbomben mit, um Zombies abzulenken und dir Luft zu verschaffen. Erwäge den Napalm-Munition-Mod für zusätzlichen Feuerschaden, da dies hilft, Boss-Gegner schneller zu besiegen.'}
+        </p>
+        <img src="https://placehold.co/600x400/EEE/31343C" alt="Helpful Gadgets Placeholder" className="my-6" />
+
+        <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
+          {language === 'EN' ? '3. Initiate the Boss Fight' : '3. Den Bosskampf einleiten'}
+        </h3>
+        <p className="leading-7 [&:not(:first-child)]:mt-6">
+          {language === 'EN'
+            ? 'To start the fight, return to the church and interact with the machine one final time. This will trigger the encounter, locking you in the church where you’ll face multiple waves of enemies.'
+            : 'Um den Kampf zu beginnen, kehre zur Kirche zurück und interagiere ein letztes Mal mit der Maschine. Dies löst den Kampf aus und schließt dich in der Kirche ein, wo du mehreren Wellen von Gegnern gegenüberstehst.'}
+        </p>
+        <img src="https://placehold.co/600x400/EEE/31343C" alt="Boss Fight Initiation Placeholder" className="my-6" />
+
+        <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
+          {language === 'EN' ? '4. Survive the Waves' : '4. Die Wellen überstehen'}
+        </h3>
+        <p className="leading-7 [&:not(:first-child)]:mt-6">
+          {language === 'EN'
+            ? 'The fight consists of three waves: hordes of zombies, followed by an elite Mangler, and finally, an Abomination. Manage each wave carefully, using your equipment to handle large groups and target priority enemies first.'
+            : 'Der Kampf besteht aus drei Wellen: Zombie-Horden, gefolgt von einem Elite-Mangler und schließlich einer Abscheulichkeit. Verwalte jede Welle sorgfältig, nutze deine Ausrüstung, um große Gruppen zu bewältigen, und priorisiere die wichtigsten Gegner.'}
+        </p>
+        <img src="https://placehold.co/600x400/EEE/31343C" alt="Surviving Boss Fight Waves Placeholder" className="my-6" />
+
+        <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
+          {language === 'EN' ? '5. Completing the Quest' : '5. Abschluss der Quest'}
+        </h3>
+        <p className="leading-7 [&:not(:first-child)]:mt-6">
+          {language === 'EN'
+            ? 'After defeating the final Abomination, a cutscene will play where your character or squad is knocked down, signaling the end of the quest. Congratulations, you’ve completed the Liberty Falls main Easter Egg!'
+            : 'Nach dem Besiegen der letzten Abscheulichkeit wird eine Zwischensequenz abgespielt, in der dein Charakter oder Team niedergeschlagen wird, was das Ende der Quest signalisiert. Glückwunsch, du hast das Liberty Falls Haupt-Easter-Egg abgeschlossen!'}
+        </p>
+        <img src="https://placehold.co/600x400/EEE/31343C" alt="Quest Completion Placeholder" className="my-6" />
+
+        {/* Step 8 */}
+
+        <h2 id='final-choosing' className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+          {language === 'EN' ? 'Final Step: Choose to Continue or Conclude the Game' : 'Letzter Schritt: Weitermachen oder das Spiel beenden'}
+        </h2>
+        <p className="leading-7 [&:not(:first-child)]:mt-6">
+          {language === 'EN'
+            ? 'With the final Abomination defeated, the Easter Egg is complete. At this point, you’ll be given an option: continue fighting in Liberty Falls for as long as you can or conclude the game with a final, scripted ending.'
+            : 'Nach dem Besiegen der letzten Abscheulichkeit ist das Easter Egg abgeschlossen. An diesem Punkt hast du die Wahl: Kämpfe weiter in Liberty Falls so lange wie möglich oder beende das Spiel mit einem endgültigen, geskripteten Ende.'}
+        </p>
+
+        <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
+          {language === 'EN' ? '1. Continuing the Fight' : '1. Weiterkämpfen'}
+        </h3>
+        <p className="leading-7 [&:not(:first-child)]:mt-6">
+          {language === 'EN'
+            ? 'If you choose to continue, you can keep fighting zombies to reach higher rounds and rack up points. This option is ideal for players who want to maximize their score and see how far they can go in Liberty Falls after completing the quest.'
+            : 'Wenn du dich entscheidest weiterzumachen, kannst du weiterhin Zombies bekämpfen, um höhere Runden zu erreichen und Punkte zu sammeln. Diese Option ist ideal für Spieler, die ihre Punktzahl maximieren und sehen möchten, wie weit sie in Liberty Falls nach Abschluss der Quest kommen können.'}
+        </p>
+        <img src="https://placehold.co/600x400/EEE/31343C" alt="Continue Playing Placeholder" className="my-6" />
+
+        <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
+          {language === 'EN' ? '2. Choosing the Ending' : '2. Das Ende wählen'}
+        </h3>
+        <p className="leading-7 [&:not(:first-child)]:mt-6">
+          {language === 'EN'
+            ? 'Alternatively, if you wish to conclude the game, simply let your character fall when prompted. This will trigger a final cutscene, officially ending your game and marking the completion of the Liberty Falls Easter Egg quest.'
+            : 'Alternativ kannst du das Spiel beenden, indem du deinen Charakter im richtigen Moment fallen lässt. Dadurch wird eine letzte Zwischensequenz ausgelöst, die dein Spiel offiziell beendet und den Abschluss der Liberty Falls Easter Egg-Quest markiert.'}
+        </p>
+        <img src="https://placehold.co/600x400/EEE/31343C" alt="Game Ending Placeholder" className="my-6" />
+
     </div>
   )
 }

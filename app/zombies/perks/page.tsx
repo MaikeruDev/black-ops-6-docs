@@ -8,7 +8,7 @@ export default function PerksAndPowerups() {
 
   return (
     <div>
-      <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl mb-4">
+      <h1 id="perks-powerups" className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl mb-4">
         {language === 'EN' ? 'Perks & Power-ups' : 'Vorteile & Power-Ups'}
       </h1>
       <p className="leading-7 [&:not(:first-child)]:mt-6">
@@ -17,7 +17,8 @@ export default function PerksAndPowerups() {
           : 'Machen Sie sich mit allen Vorteilen und Power-Ups vertraut, die Sie im Black Ops 6 Zombies-Modus antreffen. Jeder kann Ihnen helfen, länger zu überleben und sich gegen stärkere Gegnerwellen zu behaupten.'}
       </p>
 
-      <h2 className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+      {/* Jugger-Nog */}
+      <h2 id="jugger-nog" className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
         {language === 'EN' ? 'Jugger-Nog' : 'Jugger-Nog'}
       </h2>
       <p className="leading-7 [&:not(:first-child)]:mt-6">
@@ -26,7 +27,8 @@ export default function PerksAndPowerups() {
           : 'Erhöht Ihre Gesundheit, sodass Sie mehr Treffer einstecken können. Perfekt, wenn die Horden näher kommen.'}
       </p>
 
-      <h2 className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+      {/* Quick Revive */}
+      <h2 id="quick-revive" className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
         {language === 'EN' ? 'Quick Revive' : 'Schnelle Wiederbelebung'}
       </h2>
       <p className="leading-7 [&:not(:first-child)]:mt-6">
@@ -35,7 +37,8 @@ export default function PerksAndPowerups() {
           : 'Schnellere Wiederbelebung für Teamkollegen oder eine Selbstwiederbelebung im Solo-Modus. Unverzichtbar, wenn es brenzlig wird.'}
       </p>
 
-      <h2 className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+      {/* Speed Cola */}
+      <h2 id="speed-cola" className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
         {language === 'EN' ? 'Speed Cola' : 'Speed Cola'}
       </h2>
       <p className="leading-7 [&:not(:first-child)]:mt-6">
@@ -44,7 +47,7 @@ export default function PerksAndPowerups() {
           : 'Lädt schneller nach, was entscheidend ist, wenn die Zombies nicht aufhören zu kommen. Spart wertvolle Zeit inmitten heftiger Kämpfe.'}
       </p>
 
-      {/* Add the remaining perks in a similar format */}
+      {/* Add additional perks and power-ups in a similar format */}
 
     </div>
   )
