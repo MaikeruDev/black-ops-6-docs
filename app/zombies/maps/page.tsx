@@ -1,5 +1,7 @@
 'use client'
 
+import Image from 'next/image'
+
 import { useContext } from 'react'
 import { LanguageContext } from '@/app/language-context'
 
@@ -39,6 +41,8 @@ export default function Maps() {
         )}
       </p>
 
+      <Image src="/terminus_map.jpg" alt="Image of a weapon" width={600} height={400} />
+
       {/* Liberty Falls */}
       <h2 id="liberty-falls" className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
         {language === 'EN' ? 'Liberty Falls' : 'Liberty Falls'}
@@ -54,6 +58,8 @@ export default function Maps() {
           </>
         )}
       </p>
+
+      <Image src="/liberty_falls_map.jpg" alt="Image of a weapon" width={600} height={400} />
 
     </div>
   )

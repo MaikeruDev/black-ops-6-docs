@@ -1,5 +1,7 @@
 'use client'
 
+import Image from 'next/image'
+
 import { useContext } from 'react'
 import { LanguageContext } from '@/app/language-context'
 
@@ -55,7 +57,8 @@ export default function WeaponsGuide() {
           </>
         )}
       </p>
-      <img src="https://placehold.co/600x400/EEE/31343C" alt="ASG-89 Shotgun Placeholder" className="my-6" />
+
+      <Image src="/asg-89.png" alt="Image of a weapon" width={600} height={400} />
 
       {/* Assault Rifles */}
       <h3 id="assault-rifles" className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
@@ -72,7 +75,8 @@ export default function WeaponsGuide() {
           </>
         )}
       </p>
-      <img src="https://placehold.co/600x400/EEE/31343C" alt="AS VAL Assault Rifle Placeholder" className="my-6" />
+      
+      <Image src="/as-val.png" alt="Image of a weapon" width={600} height={400} />
 
       {/* Sniper Rifles */}
       <h3 id="sniper-rifles" className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
@@ -90,7 +94,7 @@ export default function WeaponsGuide() {
         )}
       </p>
 
-      <img src="https://placehold.co/600x400/EEE/31343C" alt="LR 7.62 Sniper Rifle Placeholder" className="my-6" />
+      <Image src="/lr-762.png" alt="Image of a weapon" width={600} height={400} />
 
       <p className="leading-7 [&:not(:first-child)]:mt-6">
         {language === 'EN'
@@ -138,7 +142,8 @@ export default function WeaponsGuide() {
           </>
         )}
       </p>
-      <img src="https://placehold.co/600x400/EEE/31343C" alt="Pack-a-Punch and Weapon Rarities Placeholder" className="my-6" />
+      
+      <Image src="/packapunch.jpg" alt="Image of a weapon" width={600} height={400} />
 
       {/* Classic Zombies Weapons */}
       <h2 id="classic-zombies-weapons" className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
@@ -181,8 +186,6 @@ export default function WeaponsGuide() {
         )}
       </p>
 
-      <img src="https://placehold.co/600x400/EEE/31343C" alt="Classic Weapons Placeholder" className="my-6" />
-
       {/* Elemental Ammo and Mods */}
       <h2 id="elemental-ammo-mods" className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
         {language === 'EN' ? 'Elemental Ammo and Mods' : 'Elementar-Munition und Mods'}
@@ -223,7 +226,8 @@ export default function WeaponsGuide() {
           </>
         )}
       </p>
-      <img src="https://placehold.co/600x400/EEE/31343C" alt="Elemental Ammo and Mods Placeholder" className="my-6" />
+      
+      <Image src="/elemental_ammo.jpg" alt="Image of a weapon" width={600} height={400} />
 
       {/* Wonder Weapons Overview */}
       <h2 id="wonder-weapons-overview" className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
@@ -264,9 +268,7 @@ export default function WeaponsGuide() {
             Wunderwaffen können in der <span className="text-blue-500 font-bold">Pack-a-Punch-Maschine</span> aufgerüstet werden, was ihre Stärke erhöht und manchmal Elementareffekte hinzufügt, was sie für das Spielen in hohen Runden unverzichtbar macht. Spieler sollten sich darauf konzentrieren, diese Waffen zu erhalten und aufzurüsten, um maximale Wirkung zu erzielen.
           </>
         )}
-      </p>
-
-      <img src="https://placehold.co/600x400/EEE/31343C" alt="Wonder Weapons Placeholder" className="my-6" />
+      </p> 
 
       {/* Weapon Attachments and Field Upgrades */}
       <h2 id="weapon-attachments-upgrades" className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
@@ -308,8 +310,7 @@ export default function WeaponsGuide() {
           </>
         )}
       </p>
-
-      <img src="https://placehold.co/600x400/EEE/31343C" alt="Attachments and Field Upgrades Placeholder" className="my-6" />
+ 
 
     </div>
   )

@@ -1,5 +1,7 @@
 'use client'
 
+import Image from 'next/image'
+
 import { useContext } from 'react'
 import { LanguageContext } from '@/app/language-context'
 
@@ -38,7 +40,8 @@ export default function DominationEasterEgg() {
                     </>
                 )}
             </p>
-            <img src="https://placehold.co/600x400/EEE/31343C" alt="Jet Gun Assembly Placeholder" className="my-6" />
+            
+            <Image src="/jetgun.jpg" alt="Image of a weapon" width={600} height={400} />
 
             {/* Step 2 */}
             <h2 id="step-2-aetherella-figures" className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
@@ -70,8 +73,7 @@ export default function DominationEasterEgg() {
                         Im <span className="text-blue-500 font-bold">Olly’s Comic-Laden</span> findest du die erste Aetherella-Figur auf dem Regal neben der großen Aetherella-Statue.
                     </>
                 )}
-            </p>
-            <img src="https://placehold.co/600x400/EEE/31343C" alt="Olly's Comic Store Figure Placeholder" className="my-6" />
+            </p> 
 
             {/* Figure 2 */}
             <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
@@ -87,8 +89,7 @@ export default function DominationEasterEgg() {
                         Im <span className="text-blue-500 font-bold">Comic-Laden</span> suche auf einem Schreibtisch nahe des Hintereingangs nach einer weiteren Aetherella-Figur, die neben einigen Kisten steht.
                     </>
                 )}
-            </p>
-            <img src="https://placehold.co/600x400/EEE/31343C" alt="Olly's Comic Store Back Figure Placeholder" className="my-6" />
+            </p> 
 
             {/* Figure 3 */}
             <h3 id="figure-3-comic-store" className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
@@ -104,8 +105,7 @@ export default function DominationEasterEgg() {
                         Nahe der <span className="text-blue-500 font-bold">Quick Revive-Maschine</span> im <span className="text-blue-500 font-bold">Olly’s</span> findest du diese Aetherella-Figur auf einem hohen Regal über den Comic-Regalen.
                     </>
                 )}
-            </p>
-            <img src="https://placehold.co/600x400/EEE/31343C" alt="Comic Rack Figure Placeholder" className="my-6" />
+            </p> 
 
             {/* Figure 4 */}
             <h3 id="figure-4-comic-store" className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
@@ -121,8 +121,7 @@ export default function DominationEasterEgg() {
                         Suche die letzte Figur im Comic-Laden auf einem Regal links von der <span className="text-blue-500 font-bold">kaputten Barrikadentür</span>.
                     </>
                 )}
-            </p>
-            <img src="https://placehold.co/600x400/EEE/31343C" alt="Broken Door Figure Placeholder" className="my-6" />
+            </p> 
 
             {/* Figure 5 */}
             <h3 id="figure-5-flower-shop" className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
@@ -138,8 +137,7 @@ export default function DominationEasterEgg() {
                         Schaue an die rechte Wand des <span className="text-blue-500 font-bold">Blumenladens</span>. Die Figur befindet sich auf einer Fensterbank neben einer Klimaanlage.
                     </>
                 )}
-            </p>
-            <img src="https://placehold.co/600x400/EEE/31343C" alt="Flower Shop Window Figure Placeholder" className="my-6" />
+            </p> 
 
             {/* Figure 6 */}
             <h3 id="figure-6-hilltop-church" className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
@@ -155,8 +153,7 @@ export default function DominationEasterEgg() {
                         Vor dem Eingang der <span className="text-blue-500 font-bold">Kirche</span> findest du die Figur auf der rechten Fensterbank, die zur Säule zeigt.
                     </>
                 )}
-            </p>
-            <img src="https://placehold.co/600x400/EEE/31343C" alt="Church Window Ledge Figure Placeholder" className="my-6" />
+            </p> 
 
             {/* Figure 7 */}
             <h3 id="figure-7-liberty-lanes" className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
@@ -172,8 +169,7 @@ export default function DominationEasterEgg() {
                         Finde diese Figur unter dem <span className="text-blue-500 font-bold">„L“</span> des <span className="text-blue-500 font-bold">Liberty Lanes-Schilds</span>. Steige auf den nahegelegenen Bus, um sie zu erreichen.
                     </>
                 )}
-            </p>
-            <img src="https://placehold.co/600x400/EEE/31343C" alt="Liberty Lanes Figure Placeholder" className="my-6" />
+            </p> 
 
 
             {/* Figure 8 */}
@@ -190,8 +186,7 @@ export default function DominationEasterEgg() {
                         Finde diese Figur zwischen zwei Lüftungsschlitzen auf dem <span className="text-blue-500 font-bold">Yummy Freeze-Dach</span>. Erreiche es vom <span className="text-blue-500 font-bold">Bankdach</span> aus über die Seilrutsche.
                     </>
                 )}
-            </p>
-            <img src="https://placehold.co/600x400/EEE/31343C" alt="Yummy Freeze Rooftop Figure Placeholder" className="my-6" />
+            </p> 
 
             {/* Figure 9 */}
             <h3 id="figure-9-motel-sign" className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
@@ -207,8 +202,7 @@ export default function DominationEasterEgg() {
                         Die letzte Figur befindet sich auf dem <span className="text-blue-500 font-bold">„M“ des Motel-Schilds</span> östlich des Motels. Verwende die Jetgun, um sie von der Straße aus zu sammeln.
                     </>
                 )}
-            </p>
-            <img src="https://placehold.co/600x400/EEE/31343C" alt="Motel Sign Figure Placeholder" className="my-6" />
+            </p> 
 
             {/* Step 3 */}
             <h2 id="step-3-activate-transformation" className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
@@ -239,8 +233,7 @@ export default function DominationEasterEgg() {
                         Während dieser Verwandlung erhältst du <span className="text-blue-500 font-bold">Unverwundbarkeit</span> und kannst <span className="text-blue-500 font-bold">Laserschüsse aus den Augen</span> abfeuern, um Zombies zu vernichten. Diese Kräfte halten etwa 90 Sekunden an, was dir erlaubt, Punkte zu sammeln und Horden schnell zu beseitigen.
                     </>
                 )}
-            </p>
-            <img src="https://placehold.co/600x400/EEE/31343C" alt="Aetherella Transformation Placeholder" className="my-6" />
+            </p> 
 
             <h3 id="tips-for-aetherella-mode" className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
                 {language === 'EN' ? 'Tips for Using Aetherella Mode' : 'Tipps für den Aetherella-Modus'}
@@ -255,8 +248,7 @@ export default function DominationEasterEgg() {
                         Nutze die Verwandlung, um große Gruppen von Zombies auszuschalten und Punkte zu sammeln, ohne dir Sorgen um deine Gesundheit zu machen. Dies ist der ideale Zeitpunkt, um neue Bereiche zu öffnen oder schwierige Ziele zu erreichen, solange du unverwundbar bist.
                     </>
                 )}
-            </p>
-            <img src="https://placehold.co/600x400/EEE/31343C" alt="Tips for Aetherella Mode Placeholder" className="my-6" />
+            </p> 
 
 
 

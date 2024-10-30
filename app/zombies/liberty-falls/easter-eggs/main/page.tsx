@@ -430,7 +430,8 @@ export default function LibertyFallsEasterEgg() {
           </>
         )}
       </p>
-      <img src="https://placehold.co/600x400/EEE/31343C" alt="Aether Canister Collection Placeholder" className="my-6" />
+
+      <Image src="/aether_canister.png" alt="Image of the location where u can pick up the canister" width={600} height={400} />
 
       <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
         {language === 'EN' ? '2. Place the Canister at the Gas Station' : '2. Kanister an der Tankstelle platzieren'}
@@ -448,7 +449,8 @@ export default function LibertyFallsEasterEgg() {
           </>
         )}
       </p>
-      <img src="https://placehold.co/600x400/EEE/31343C" alt="Gas Station Placement Placeholder" className="my-6" />
+      
+      <Image src="/canister_gas_station.png" alt="Image of the location to place the first aether canister" width={600} height={400} />
 
       <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
         {language === 'EN' ? '3. Defend the LTG and Weaken the HVT' : '3. LTG verteidigen und HVT schwächen'}
@@ -466,7 +468,8 @@ export default function LibertyFallsEasterEgg() {
           </>
         )}
       </p>
-      <img src="https://placehold.co/600x400/EEE/31343C" alt="Defend LTG Device Placeholder" className="my-6" />
+
+      <Image src="/ltg_storm_gas_station.png" alt="Image of the location to place the ltg" width={600} height={400} />
 
       <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
         {language === 'EN' ? '4. Capture the HVT Essence' : '4. HVT-Essenz einfangen'}
@@ -484,7 +487,8 @@ export default function LibertyFallsEasterEgg() {
           </>
         )}
       </p>
-      <img src="https://placehold.co/600x400/EEE/31343C" alt="Capture HVT Essence Placeholder" className="my-6" />
+      
+      <Image src="/capture_gas_station.png" alt="Image of the location to capture the essence" width={600} height={400} />
 
       <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
         {language === 'EN' ? '5. Return to the Church with the Filled Canister' : '5. Mit dem gefüllten Kanister zur Kirche zurückkehren'}
@@ -502,8 +506,7 @@ export default function LibertyFallsEasterEgg() {
           </>
         )}
       </p>
-      <img src="https://placehold.co/600x400/EEE/31343C" alt="Return to Church Placeholder" className="my-6" />
-
+      
 
       {/* Step 6 */}
 
@@ -557,7 +560,8 @@ export default function LibertyFallsEasterEgg() {
           </>
         )}
       </p>
-      <img src="https://placehold.co/600x400/EEE/31343C" alt="Hillside Projector Placeholder" className="my-6" />
+      
+      <Image src="/projector1.jpg" alt="Image of the location of a projector" width={600} height={400} />
 
       <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
         {language === 'EN' ? '2. Locate Projector 2: Backyard near the White House' : '2. Projektor 2 finden: Hinterhof beim Weißen Haus'}
@@ -575,7 +579,8 @@ export default function LibertyFallsEasterEgg() {
           </>
         )}
       </p>
-      <img src="https://placehold.co/600x400/EEE/31343C" alt="White House Projector Placeholder" className="my-6" />
+
+      <Image src="/projector2.jpg" alt="Image of the location of a projector" width={600} height={400} />
 
       <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
         {language === 'EN' ? '3. Locate Projector 3: Bank Rooftop' : '3. Projektor 3 finden: Bankdach'}
@@ -595,7 +600,8 @@ export default function LibertyFallsEasterEgg() {
           </>
         )}
       </p>
-      <img src="https://placehold.co/600x400/EEE/31343C" alt="Bank Rooftop Projector Placeholder" className="my-6" />
+      
+      <Image src="/projector3.jpg" alt="Image of the location of a projector" width={600} height={400} />
 
       <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
         {language === 'EN' ? '4. Troubleshooting the Sync' : '4. Problembehebung bei der Synchronisation'}
@@ -614,9 +620,7 @@ export default function LibertyFallsEasterEgg() {
             wird ein <span className="text-blue-500 font-bold"> violetter Strahl</span> ausgesendet, der das nächste Ziel markiert.
           </>
         )}
-      </p>
-      <img src="https://placehold.co/600x400/EEE/31343C" alt="Projector Sync Troubleshooting Placeholder" className="my-6" />
-
+      </p>  
 
       {/* Step 7 */}
 
@@ -656,8 +660,7 @@ export default function LibertyFallsEasterEgg() {
             wie <span className="text-blue-500 font-bold">Schrotflinten</span> oder <span className="text-blue-500 font-bold">LMGs</span>.
           </>
         )}
-      </p>
-      <img src="https://placehold.co/600x400/EEE/31343C" alt="Essential Perks and Weapons Placeholder" className="my-6" />
+      </p> 
 
       <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
         {language === 'EN' ? '2. Equip Helpful Gadgets' : '2. Nützliche Gadgets ausrüsten'}
@@ -674,8 +677,7 @@ export default function LibertyFallsEasterEgg() {
             Erwäge den <span className="text-blue-500 font-bold">Napalm-Munition-Mod</span> für zusätzlichen Feuerschaden, da dies hilft, Boss-Gegner schneller zu besiegen.
           </>
         )}
-      </p>
-      <img src="https://placehold.co/600x400/EEE/31343C" alt="Helpful Gadgets Placeholder" className="my-6" />
+      </p> 
 
       <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
         {language === 'EN' ? '3. Initiate the Boss Fight' : '3. Den Bosskampf einleiten'}
@@ -692,8 +694,7 @@ export default function LibertyFallsEasterEgg() {
             Dies löst den Kampf aus und schließt dich in der Kirche ein, wo du mehreren Wellen von Gegnern gegenüberstehst.
           </>
         )}
-      </p>
-      <img src="https://placehold.co/600x400/EEE/31343C" alt="Boss Fight Initiation Placeholder" className="my-6" />
+      </p> 
 
       <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
         {language === 'EN' ? '4. Survive the Waves' : '4. Die Wellen überstehen'}
@@ -711,8 +712,7 @@ export default function LibertyFallsEasterEgg() {
             Verwalte jede Welle sorgfältig, nutze deine Ausrüstung, um große Gruppen zu bewältigen, und priorisiere die wichtigsten Gegner.
           </>
         )}
-      </p>
-      <img src="https://placehold.co/600x400/EEE/31343C" alt="Surviving Boss Fight Waves Placeholder" className="my-6" />
+      </p> 
 
       <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
         {language === 'EN' ? '5. Completing the Quest' : '5. Abschluss der Quest'}
@@ -730,7 +730,8 @@ export default function LibertyFallsEasterEgg() {
           </>
         )}
       </p>
-      <img src="https://placehold.co/600x400/EEE/31343C" alt="Quest Completion Placeholder" className="my-6" />
+
+      <Image src="/liberty_final.png" alt="Image of the cutscene" width={600} height={400} />
 
       {/* Step 8 */}
 
@@ -768,8 +769,7 @@ export default function LibertyFallsEasterEgg() {
             <span className="text-blue-500 font-bold"> Liberty Falls</span> nach Abschluss der Quest kommen können.
           </>
         )}
-      </p>
-      <img src="https://placehold.co/600x400/EEE/31343C" alt="Continue Playing Placeholder" className="my-6" />
+      </p> 
 
       <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
         {language === 'EN' ? '2. Choosing the Ending' : '2. Das Ende wählen'}
@@ -788,8 +788,7 @@ export default function LibertyFallsEasterEgg() {
             <span className="text-blue-500 font-bold"> Liberty Falls Easter Egg-Quest</span> markiert.
           </>
         )}
-      </p>
-      <img src="https://placehold.co/600x400/EEE/31343C" alt="Game Ending Placeholder" className="my-6" />
+      </p> 
 
 
     </div>
