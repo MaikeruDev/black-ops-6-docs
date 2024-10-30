@@ -106,7 +106,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <div>
               <button 
                 onClick={handleEasterEggsClick}
-                className="flex items-center justify-between w-full text-sm hover:underline focus:outline-none"
+                className="flex items-center justify-between w-full text-sm hover:underline focus:outline-none text-left"
               >
                 <span>{language === 'EN' ? 'Liberty Falls Easter Eggs' : 'Liberty Falls Easter Eggs'}</span>
                 {easterEggsOpen ? <ChevronDown className="h-4 w-4" /> : <ChevronRight className="h-4 w-4" />}
@@ -117,7 +117,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     {language === 'EN' ? 'Main Easter Egg' : 'Haupt-Easter Egg'}
                   </Link>
                   <Link href="/zombies/liberty-falls/easter-eggs/domination" className="text-sm hover:underline" onClick={() => setMobileMenuOpen(false)}>
-                    {language === 'EN' ? 'Domination' : 'Dominanz'}
+                    {language === 'EN' ? 'Domination' : 'Domination'}
                   </Link>
                   <Link href="/zombies/liberty-falls/easter-eggs/bowling" className="text-sm hover:underline" onClick={() => setMobileMenuOpen(false)}>
                     {language === 'EN' ? 'Bowling' : 'Bowling'}

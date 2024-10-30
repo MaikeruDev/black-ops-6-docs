@@ -32,7 +32,7 @@ export default function Home() {
         <Info className="text-yellow-700 mt-1" size={20} />
         <span className="leading-7">
           {language === 'EN'
-            ? 'This website is very much Work in Progrss. If there is any wrong information or missing details, feel free to let me know. Discord: maikeru.dev'
+            ? 'This website is very much Work in Progress. If there is any wrong information or missing details, feel free to let me know. Discord: maikeru.dev'
             : 'Diese Website ist sehr unvollständig. Wenn es irgendwelche falschen Informationen oder fehlende Details gibt, schreib mir gern. Discord: maikeru.dev'}
         </span>
       </p>
