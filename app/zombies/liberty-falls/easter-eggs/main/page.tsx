@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 
 import { useContext } from 'react'
 import { LanguageContext } from '@/app/language-context'
@@ -139,7 +140,7 @@ export default function LibertyFallsEasterEgg() {
         )}
       </p>
 
-      <img src="https://placehold.co/600x400/EEE/31343C" alt="Church Entrance Placeholder" className="my-6" />
+      <Image src="/church.png" alt="Image of the Church" width={600} height={400} />
 
       {/* Step 2 */}
 
@@ -179,6 +180,8 @@ export default function LibertyFallsEasterEgg() {
         )}
       </p>
 
+      <Image src="/water_valve_store.png" alt="Image of the location of the water pressure valve" width={600} height={400} />
+
       <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
         {language === 'EN' ? '2. Retrieve the Handbrake' : '2. Handbremse besorgen'}
       </h3>
@@ -196,6 +199,8 @@ export default function LibertyFallsEasterEgg() {
         )}
       </p>
 
+      <Image src="/shed.png" alt="Image of the location of the handbrake" width={600} height={400} />
+
       <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
         {language === 'EN' ? '3. Find Electrical Wires' : '3. Stromkabel finden'}
       </h3>
@@ -212,6 +217,8 @@ export default function LibertyFallsEasterEgg() {
           </>
         )}
       </p>
+
+      <Image src="/electrical_wires.jpg" alt="Image of the location of the electrical wires" width={600} height={400} />
 
       <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
         {language === 'EN' ? '4. Assemble the Jet Gun' : '4. Jetgun zusammenbauen'}
@@ -266,7 +273,8 @@ export default function LibertyFallsEasterEgg() {
           </>
         )}
       </p>
-      <img src="https://placehold.co/600x400/EEE/31343C" alt="Church Part Location Placeholder" className="my-6" />
+      
+      <Image src="/church_hat.jpg" alt="Image of the location of the floating churt part" width={600} height={400} />
 
       <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
         {language === 'EN' ? '2. Comic Store Part' : '2. Comic-Store-Teil'}
@@ -284,7 +292,8 @@ export default function LibertyFallsEasterEgg() {
           </>
         )}
       </p>
-      <img src="https://placehold.co/600x400/EEE/31343C" alt="Comic Store Part Location Placeholder" className="my-6" />
+      
+      <Image src="/comic_store_part.png" alt="Image of the location of the floating comic store part" width={600} height={400} />
 
       <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
         {language === 'EN' ? '3. Barbershop Part' : '3. Friseursalon-Teil'}
@@ -302,8 +311,8 @@ export default function LibertyFallsEasterEgg() {
           </>
         )}
       </p>
-      <img src="https://placehold.co/600x400/EEE/31343C" alt="Barbershop Part Location Placeholder" className="my-6" />
-
+      
+      <Image src="/barber-shop.png" alt="Image of the location of the barbershop part" width={600} height={400} />
 
       {/* Step 4 */}
 
@@ -345,8 +354,7 @@ export default function LibertyFallsEasterEgg() {
           </>
         )}
       </p>
-      <img src="https://placehold.co/600x400/EEE/31343C" alt="Bank Rooftop Access Placeholder" className="my-6" />
-
+ 
       <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
         {language === 'EN' ? '2. Assemble the LTG' : '2. LTG zusammensetzen'}
       </h3>
@@ -365,7 +373,8 @@ export default function LibertyFallsEasterEgg() {
           </>
         )}
       </p>
-      <img src="https://placehold.co/600x400/EEE/31343C" alt="LTG Assembly Placeholder" className="my-6" />
+      
+      <Image src="/assemble_ltg.png" alt="Image of the location to assemble the ltg" width={600} height={400} />
 
       <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
         {language === 'EN' ? '3. Prepare for the Next Step' : '3. Vorbereitung auf den nächsten Schritt'}
@@ -383,9 +392,7 @@ export default function LibertyFallsEasterEgg() {
           </>
         )}
       </p>
-      <img src="https://placehold.co/600x400/EEE/31343C" alt="Preparation Placeholder" className="my-6" />
-
-
+  
       {/* Step 5 */}
 
       <h2 id='fill-canister' className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
