@@ -71,9 +71,85 @@ export default function PerksAndPowerups() {
         )}
       </p>
 
+      {/* Stamin-Up */}
+      <h2 id="stamin-up" className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+        {language === 'EN' ? 'Stamin-Up' : 'Stamin-Up'}
+      </h2>
+      <p className="leading-7 [&:not(:first-child)]:mt-6">
+        {language === 'EN' ? (
+          <>
+            Boosts your <span className="text-blue-500 font-bold">movement speed</span>, letting you dodge zombies more easily.
+          </>
+        ) : (
+          <>
+            Erhöht deine <span className="text-blue-500 font-bold">Bewegungsgeschwindigkeit</span>, sodass du den Zombies besser ausweichen kannst.
+          </>
+        )}
+      </p>
 
-      {/* Add additional perks and power-ups in a similar format */}
+      {/* PhD Flopper */}
+      <h2 id="phd-flopper" className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+        {language === 'EN' ? 'PhD Flopper' : 'PhD Flopper'}
+      </h2>
+      <p className="leading-7 [&:not(:first-child)]:mt-6">
+        {language === 'EN' ? (
+          <>
+            Grants <span className="text-blue-500 font-bold">immunity</span> to self-inflicted damage. Dive-to-prone causes explosions that get stronger with height.
+          </>
+        ) : (
+          <>
+            Verleiht <span className="text-blue-500 font-bold">Immunität</span> gegen selbst zugefügten Schaden. Ein Sturz auf den Bauch verursacht Explosionen, die mit der Höhe stärker werden.
+          </>
+        )}
+      </p>
 
+      {/* Deadshot Daiquiri */}
+      <h2 id="deadshot-daiquiri" className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+        {language === 'EN' ? 'Deadshot Daiquiri' : 'Deadshot Daiquiri'}
+      </h2>
+      <p className="leading-7 [&:not(:first-child)]:mt-6">
+        {language === 'EN' ? (
+          <>
+            Increases <span className="text-blue-500 font-bold">critical damage</span> and auto-aims to critical areas.
+          </>
+        ) : (
+          <>
+            Erhöht den <span className="text-blue-500 font-bold">Krit-Schaden</span> und zielt automatisch auf kritische Bereiche.
+          </>
+        )}
+      </p>
+
+      {/* Elemental Pop */}
+      <h2 id="elemental-pop" className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+        {language === 'EN' ? 'Elemental Pop' : 'Elemental Pop'}
+      </h2>
+      <p className="leading-7 [&:not(:first-child)]:mt-6">
+        {language === 'EN' ? (
+          <>
+            Adds random <span className="text-blue-500 font-bold">elemental effects</span> to bullets, such as fire or electric shock.
+          </>
+        ) : (
+          <>
+            Fügt Kugeln zufällige <span className="text-blue-500 font-bold">elementare Effekte</span> hinzu, wie Feuer- oder Elektroschock.
+          </>
+        )}
+      </p>
+
+      {/* Melee Macchiato */}
+      <h2 id="melee-macchiato" className="mt-10 scroll-m-20 border-b border-gray-800 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+        {language === 'EN' ? 'Melee Macchiato' : 'Melee Macchiato'}
+      </h2>
+      <p className="leading-7 [&:not(:first-child)]:mt-6">
+        {language === 'EN' ? (
+          <>
+            Transforms melee attacks into <span className="text-blue-500 font-bold">power punches</span> that send zombies flying.
+          </>
+        ) : (
+          <>
+            Verwandelt Nahkampfangriffe in <span className="text-blue-500 font-bold">Power-Schläge</span>, die Zombies wegschleudern.
+          </>
+        )}
+      </p>
     </div>
   )
 }
