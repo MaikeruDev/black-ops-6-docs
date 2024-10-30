@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Black Ops 6 Guide - Zombies & Multiplayer
 
-## Getting Started
+Welcome to the **Black Ops 6 Guide** repository! This project is a full-fledged guide covering all aspects of Black Ops 6, focusing on both **Zombies mode** and **Multiplayer**. From maps and weapons to perks, power-ups, and Easter eggs, this guide is designed to be an essential reference for both new and experienced players.
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This guide includes:
+- Detailed **Zombies mode** content, including maps, perks, power-ups, Easter eggs, and more.
+- Comprehensive **Multiplayer** coverage with maps, weapon loadouts, and strategies.
+- Easy-to-follow tutorials on Easter eggs and secrets scattered throughout the game.
+- Language support for both English and German, making the guide accessible to a wider audience.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Zombies Mode**: Explore all maps, unlock Easter eggs, discover hidden features, and master survival strategies.
+- **Multiplayer Mode**: Learn about each multiplayer map, effective weapon loadouts, and top tactics for each mode.
+- **Weapons Guide**: Full weapon descriptions, including recommended attachments and unique loadouts.
+- **Perks & Power-Ups**: Explanation of each perk and power-up with tips on when and how to use them for maximum effectiveness.
+- **Easter Eggs**: Step-by-step guides for each Easter egg, including visual guides and necessary requirements.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Technologies
 
-## Learn More
+- **Next.js**: For creating fast, server-rendered React applications.
+- **React**: Component-based UI structure for organizing game content.
+- **JavaScript**: Core language for the application logic.
+- **CSS Modules**: For modular and responsive styling.
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Content Overview
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Zombies Mode
 
-## Deploy on Vercel
+- **Maps**: Guides for each map, including key locations, enemy types, and strategic tips.
+- **Perks & Power-Ups**: Descriptions, uses, and recommended strategies.
+- **Easter Eggs**: Step-by-step guides for unlocking Easter eggs, including special requirements.
+- **Weapons**: Weapon recommendations for Zombies mode, with a focus on crowd control and high-damage options.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Multiplayer Mode
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Maps**: Overviews of each multiplayer map with tips on hotspots and strategic zones.
+- **Weapons & Attachments**: Recommendations on loadouts, attachments, and mods for each playstyle.
+- **Game Modes**: Tips and tactics tailored for different multiplayer modes like Domination, TDM, and Free-for-All.
+
+## Language Support
+
+This project uses `LanguageContext` to support both English and German languages. Users can switch between languages via the settings.
+
+## License
+
+This project is open-source and available under the MIT License.
+
+## Acknowledgments
+
+Created by [MaikeruDev] with contributions from the **Black Ops 6** community. Special thanks to contributors who have kept the guide up-to-date and informative.
