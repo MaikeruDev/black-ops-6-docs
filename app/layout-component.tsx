@@ -6,13 +6,14 @@ import { useContext, useEffect, useState } from 'react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { ScrollArea } from "@/components/ui/scroll-area"
-import { Skull, Search, Menu, Globe, ChevronDown, ChevronRight } from 'lucide-react'
+import { Skull, Search, Menu, Globe, ChevronDown, ChevronRight, X } from 'lucide-react'
 import { LanguageContext } from './language-context'
 import { TableOfContents } from '@/components/table-of-contents'
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const { language, setLanguage } = useContext(LanguageContext)
   const [easterEggsOpen, setEasterEggsOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const router = useRouter()
 
   useEffect(() => {
@@ -35,25 +36,25 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   const handleEasterEggsClick = (e: React.MouseEvent) => {
     e.preventDefault()
-    /* Would open a page when opening the List */
-    /* if (!easterEggsOpen) {
-      router.push('/zombies/liberty-falls/easter-eggs')
-    } */ 
     const newState = !easterEggsOpen
     setEasterEggsOpen(newState)
     localStorage.setItem('easterEggsOpen', JSON.stringify(newState))
+  }
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen)
   }
   
   return (
     <div className="flex flex-col min-h-screen bg-black text-gray-100">
       <header className="sticky top-0 z-50 w-full border-b border-gray-800 bg-gray-900/95 backdrop-blur supports-[backdrop-filter]:bg-gray-900/75">
         <div className="container flex h-14 max-w-screen-2xl items-center">
-          <div className="mr-4 hidden md:flex">
+          <div className="mr-4 flex items-center">
             <Link className="mr-6 ml-6 flex items-center space-x-2" href="/">
               <Skull className="h-6 w-6" />
               <span className="hidden font-bold sm:inline-block">Black Ops 6 Docs</span>
             </Link>
-            <nav className="flex items-center space-x-6 text-sm font-medium">
+            <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
               <Link className="transition-colors hover:text-gray-100/70" href="/zombies">
                 {language === 'EN' ? 'Zombies' : 'Zombies'}
               </Link>
@@ -65,8 +66,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </Link>
             </nav>
           </div>
-          <Button variant="outline" size="icon" className="md:hidden bg-gray-800 hover:bg-gray-900 hover:text-white mr-2">
-            <Menu className="h-5 w-5" />
+          <Button variant="outline" size="icon" className="md:hidden bg-gray-800 hover:bg-gray-900 hover:text-white mr-2" onClick={toggleMobileMenu}>
+            {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             <span className="sr-only">Toggle Menu</span>
           </Button>
           <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
@@ -90,7 +91,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </div>
       </header>
       <div className="container flex-1 items-start md:grid md:grid-cols-[220px_minmax(0,1fr)] md:gap-6 lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-10">
-        <aside className="fixed top-14 z-30 -ml-2 hidden h-[calc(100vh-3.5rem)] w-full shrink-0 md:sticky md:block">
+        <aside className={`${mobileMenuOpen ? 'block' : 'hidden'} md:block fixed md:sticky top-14 z-30 -ml-2 h-[calc(100vh-3.5rem)] w-full shrink-0 overflow-y-auto bg-black md:bg-transparent`}>
           <ScrollArea className="h-full py-6 pl-8 pr-6 lg:py-8"> 
           <div className="mb-2 mt-6"> 
           <Link href="/zombies" className="mb-2 text-lg font-semibold hover:underline">
